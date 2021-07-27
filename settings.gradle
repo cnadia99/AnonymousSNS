@@ -1,0 +1,2 @@
+rootProject.name = "AnonymousSNS"
+include ':app'

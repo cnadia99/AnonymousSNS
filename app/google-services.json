@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978880383261",
+    "project_id": "anonymoussns-d4191",
+    "storage_bucket": "anonymoussns-d4191.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978880383261:android:411c483a7c45f36353f9f4",
+        "android_client_info": {
+          "package_name": "com.cnadia.anonymoussns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978880383261-cdumv40tc8b1enbgb35iovfv3a8qanii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFDNXU_yaUTXW5fOf5DebF3dw9Y0BWlgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978880383261-cdumv40tc8b1enbgb35iovfv3a8qanii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
