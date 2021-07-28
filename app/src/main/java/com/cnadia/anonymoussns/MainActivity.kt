@@ -1,5 +1,6 @@
 package com.cnadia.anonymoussns
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     val TAG = "MainAtivity"
@@ -16,16 +18,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ref.addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val message = snapshot.value.toString()
-                Log.d(TAG, message)
-                supportActionBar?.title = message
-            }
+//        ref.addValueEventListener(object: ValueEventListener {
+//            override fun onDataChange(snapshot: DataSnapshot) {
+//                val message = snapshot.value.toString()
+//                Log.d(TAG, message)
+//                supportActionBar?.title = message
+//            }
+//
+//            override fun onCancelled(error: DatabaseError) {
+//                error.toException().printStackTrace()
+//            }
+//        })
 
-            override fun onCancelled(error: DatabaseError) {
-                error.toException().printStackTrace()
-            }
-        })
+        supportActionBar?.title = "글 목록"
+
+        floatingActionButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, WriteActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
