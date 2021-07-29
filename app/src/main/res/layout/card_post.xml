@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/bgImageView"
+            android:id="@+id/bgImage"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
@@ -83,7 +83,7 @@
             tools:srcCompat="@drawable/clock" />
 
         <TextView
-            android:id="@+id/timeTextView"
+            android:id="@+id/timeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -104,12 +104,12 @@
             android:layout_marginRight="8dp"
             android:adjustViewBounds="true"
             app:layout_constraintBottom_toBottomOf="@+id/clockImage"
-            app:layout_constraintEnd_toStartOf="@+id/commentCountTextView"
+            app:layout_constraintEnd_toStartOf="@+id/commentCountText"
             app:layout_constraintTop_toTopOf="@+id/clockImage"
             tools:srcCompat="@drawable/comment" />
 
         <TextView
-            android:id="@+id/commentCountTextView"
+            android:id="@+id/commentCountText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

@@ -37,7 +37,7 @@ class WriteActivity : AppCompatActivity() {
 
         supportActionBar?.title = "글쓰기"
 
-        val layoutManager = LinearLayoutManager(this@WriteActivity)
+        val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
         recyclerView.layoutManager = layoutManager
@@ -62,11 +62,10 @@ class WriteActivity : AppCompatActivity() {
 
     private fun getMyId(): String {
         return Settings.Secure.getString(this.contentResolver, Settings.Secure.ANDROID_ID)
-
     }
 
     inner class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val imageView = itemView.bgImageView
+        val imageView = itemView.bgImage
     }
 
     inner class MyAdapter: RecyclerView.Adapter<MyViewHolder>() {
