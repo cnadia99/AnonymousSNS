@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/backgroundImge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
@@ -34,9 +34,9 @@
             android:text="아! 배고프다"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroundImge"
+            app:layout_constraintEnd_toEndOf="@+id/backgroundImge"
+            app:layout_constraintStart_toStartOf="@+id/backgroundImge"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

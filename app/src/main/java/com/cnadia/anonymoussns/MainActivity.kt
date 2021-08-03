@@ -109,8 +109,9 @@ class MainActivity : AppCompatActivity() {
                 }
             })
     }
+
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val image = itemView.bgImage
+        val bgImage = itemView.bgImage
         val contentsText = itemView.contentsText
         val timeText = itemView.timeText
         val commentCountText = itemView.commentCountText
@@ -125,7 +126,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
             val post = posts[position]
-            Picasso.get().load(Uri.parse(post.bgUri)).fit().centerCrop().into(holder.image)
+            Picasso.get().load(Uri.parse(post.bgUri)).fit().centerCrop().into(holder.bgImage)
             holder.contentsText.text = post.message
             holder.timeText.text = getDiffTimeText(post.writeTime as Long)
             holder.commentCountText.text = "0"

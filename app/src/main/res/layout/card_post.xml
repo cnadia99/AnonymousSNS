@@ -80,7 +80,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/bottomBackground"
-            tools:srcCompat="@drawable/clock" />
+            app:srcCompat="@drawable/clock" />
 
         <TextView
             android:id="@+id/timeText"
@@ -106,7 +106,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/clockImage"
             app:layout_constraintEnd_toStartOf="@+id/commentCountText"
             app:layout_constraintTop_toTopOf="@+id/clockImage"
-            tools:srcCompat="@drawable/comment" />
+            app:srcCompat="@drawable/comment" />
 
         <TextView
             android:id="@+id/commentCountText"
